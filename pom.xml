@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>springmvc-angularjs-highcharts-demo</module>
+        <!--<module>springmvc-angularjs-highcharts-demo</module>-->
     </modules>
     
     <properties>
