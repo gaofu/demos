@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<log4j:configuration>
+
+    <appender name="default" class="org.apache.log4j.DailyRollingFileAppender">
+        <param name="File" value="${catalina.base}/logs/demo.log"/>
+        <param name="DatePattern" value="'.'yyyy-MM-dd"/>
+        <layout class="org.apache.log4j.PatternLayout">
+            <param name="ConversionPattern" value="%d{ABSOLUTE} %-5p %40.40c:%4L - %m%n"/>
+        </layout>
+    </appender>
+
+    <root>
+        <level value="info"/>
+        <appender-ref ref="default"/>
+    </root>
+
+</log4j:configuration>
