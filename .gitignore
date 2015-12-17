@@ -1,0 +1,14 @@
+*.class
+
+# Package Files #
+*.jar
+*.war
+*.ear
+*.iml
+# Localhost Temporary Files
+.project
+.settings
+.classpath
+*.log
+.idea/
+target/

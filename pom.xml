@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>gao.fu</groupId>
+    <artifactId>demos</artifactId>
+    <version>1.0</version>
+    <packaging>pom</packaging>
+
+    <modules>
+        <module>springmvc-angularjs-highcharts-demo</module>
+    </modules>
+    
+    <properties>
+        <java.version>1.7</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
+        <springframework.version>4.1.7.RELEASE</springframework.version>
+        <spring-data-mongo.version>1.7.0.RELEASE</spring-data-mongo.version>
+        <mysql-driver.version>5.1.25</mysql-driver.version>
+        <mongo-driver.version>2.12.1</mongo-driver.version>
+        <mybatis-spring.version>1.2.3</mybatis-spring.version>
+        <mybatis.version>3.3.0</mybatis.version>
+        <c3p0.version>0.9.1.2</c3p0.version>
+        <jackson.version>2.5.3</jackson.version>
+        <servlet-api.version>3.1.0</servlet-api.version>
+        <jstl.version>1.2</jstl.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>org.springframework</groupId>
+                <artifactId>spring-framework-bom</artifactId>
+                <version>${springframework.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+</project>
