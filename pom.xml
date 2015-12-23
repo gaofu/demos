@@ -11,6 +11,7 @@
 
     <modules>
         <module>springmvc-angularjs-highcharts-demo</module>
+        <module>spring-integration-kafka-demo</module>
     </modules>
     
     <properties>
@@ -19,6 +20,8 @@
 
         <springframework.version>4.1.7.RELEASE</springframework.version>
         <spring-data-mongo.version>1.7.0.RELEASE</spring-data-mongo.version>
+        <spring-kafka.version>1.1.2.RELEASE</spring-kafka.version>
+        <kafka.version>0.8.1.1</kafka.version>
         <mysql-driver.version>5.1.25</mysql-driver.version>
         <mongo-driver.version>2.12.1</mongo-driver.version>
         <mybatis-spring.version>1.2.3</mybatis-spring.version>
@@ -39,6 +42,37 @@
                 <version>${springframework.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.integration</groupId>
+                <artifactId>spring-integration-core</artifactId>
+                <version>${springframework.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.springframework.integration</groupId>
+                <artifactId>spring-integration-kafka</artifactId>
+                <version>${spring-kafka.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>org.apache.kafka</groupId>
+                <artifactId>kafka_2.9.2</artifactId>
+                <version>${kafka.version}</version>
+                <exclusions>
+                    <exclusion>
+                        <artifactId>jmxri</artifactId>
+                        <groupId>com.sun.jmx</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>jms</artifactId>
+                        <groupId>javax.jms</groupId>
+                    </exclusion>
+                    <exclusion>
+                        <artifactId>jmxtools</artifactId>
+                        <groupId>com.sun.jdmk</groupId>
+                    </exclusion>
+                </exclusions>
             </dependency>
 
             <dependency>
