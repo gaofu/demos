@@ -12,6 +12,7 @@
     <modules>
         <module>springmvc-angularjs-highcharts-demo</module>
         <module>spring-integration-kafka-demo</module>
+        <module>storm-demo</module>
     </modules>
     
     <properties>

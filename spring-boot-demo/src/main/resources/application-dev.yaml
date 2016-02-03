@@ -1,0 +1,12 @@
+my:
+  servers:
+    - abc
+    - xyz
+    - success
+    - yes
+    - no
+    - 'yes'
+
+connection:
+    username: admin
+    remoteAddress: 192.168.1.1
