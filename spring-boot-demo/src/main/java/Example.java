@@ -18,7 +18,6 @@ import java.util.List;
 
 @RestController
 @EnableAutoConfiguration
-//@Configuration
 @EnableConfigurationProperties
 public class Example {
 
@@ -40,9 +39,6 @@ public class Example {
         return new ArrayList<String>();
     }
 
-//    @Autowired
-//    private ConnectionSettings connection;
-
     @Autowired
     public Example(ApplicationArguments arguments) {
         this.arguments = arguments;
@@ -50,7 +46,6 @@ public class Example {
 
     @RequestMapping("/")
     String home() throws JsonProcessingException {
-//        System.out.println(connection.getRemoteAddress().toString());
         return "Hello World!"
                 + BR + arguments.getOptionValues("debug")
                 + BR + arguments.getOptionValues("foo")

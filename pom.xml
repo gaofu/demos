@@ -13,6 +13,7 @@
         <module>springmvc-angularjs-highcharts-demo</module>
         <module>spring-integration-kafka-demo</module>
         <module>storm-demo</module>
+        <module>mongo-demo</module>
     </modules>
     
     <properties>
